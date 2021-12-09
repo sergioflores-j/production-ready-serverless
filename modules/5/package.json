@@ -1,0 +1,26 @@
+{
+  "name": "3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sls": "AWS_PROFILE=prd-ready-sls serverless",
+    "deploy": "AWS_PROFILE=prd-ready-sls serverless deploy",
+    "export-env": "AWS_PROFILE=prd-ready-sls serverless export-env --all",
+    "seed-restaurants": "AWS_PROFILE=prd-ready-sls node seed-restaurants.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.1045.0",
+    "dotenv": "^10.0.0",
+    "serverless": "^2.68.0",
+    "serverless-export-env": "^2.0.0"
+  },
+  "dependencies": {
+    "aws4": "^1.11.0",
+    "axios": "^0.24.0",
+    "mustache": "^4.2.0"
+  }
+}
